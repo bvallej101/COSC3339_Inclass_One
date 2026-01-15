@@ -1,6 +1,6 @@
-# YOUR NAME HERE
-# YOUR SECTION HERE
-# DATE OF EDITING HERE
+# Bart Vallejo
+# COSC-3339-02
+# 1/15/2026
 
 """
 ASSIGNMENT: INTRODUCTION TO MERGING
@@ -14,14 +14,14 @@ import math
 
 # This method contains a bug. In your commit note, state the bug and how you fixed it
 def calculate_hypotenuse(side_a, side_b):
-    result = side_a + side_b  
+    result = math.hypot(side_a, side_b) ##fixed the bug by using math.hypot to calculate hypotenuse instead of adding 
     return result
 
 # This method contains a bug. In your commit note, state the bug and how you fixed it
 def count_words(sentence):
     if len(sentence) == 0:
         return 0
-    words = sentence.split(',')  
+    words = sentence.split(' ')  ## wrong code here splitting by comma instead of space
     return len(words)
 
 
@@ -80,14 +80,16 @@ def main():
 
     # TEST A: Hypotenuse
     print(f"Test A1 (0, 5): {calculate_hypotenuse(0, 5)} (Expected: 5.0)") 
-    print(f"Test A2 (3, 4): {calculate_hypotenuse(3, 4)} (Expected: 5.0)") 
+    print(f"Test A2 (3, 4): {calculate_hypotenuse(3, 4)} (Expected: 5.0)") \
+    ## does not work because it adds instead of using pythagorean theorem.
 
     print("-" * 20)
 
     # TEST B: Word Count
     print(f"Test B1 ('hello, world'): {count_words('hello, world')} (Expected: 2)")
     print(f"Test B2 ('hello world'): {count_words('hello world')} (Expected: 2)")
-
+    ## does not work because it splits by commas instead of spaces.
+ 
     print("-" * 20)
 
     # TEST C: Shipping
