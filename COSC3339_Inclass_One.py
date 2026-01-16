@@ -56,10 +56,11 @@ def calculate_shipping_cost(weight, destination):
             
     else:
         # Unknown destination
-        print(f"Error: Unknown destination {destination}")
-        return None
+        
+        return 0.0
+    cost = max(cost, 0.0)
+    return round(cost, 2)
 
-    return cost
 
 
 # This method uses funky logic. Rewrite it using different loop structures
