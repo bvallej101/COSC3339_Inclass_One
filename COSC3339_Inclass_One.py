@@ -70,7 +70,11 @@ def curve_scores(scores):
 
 # For scenario three change the name of this method.
 # For scenario five fix the typos
-def _validate_imput(text_value):
+
+def process_user_data(user_input):
+    return _validate_input(user_input)
+
+def _validate_input(text_value):
 
     valud_imput = True 
     
@@ -118,12 +122,15 @@ def main():
     # In 'Change Six', you will uncomment the lines below and write 
     # a new function called 'process_user_data' that uses the helper.
     
-    # print("--- SCENARIO 3 TEST ---")
-    # user_input = "This is some fake user data"
-    # if process_user_data(user_input):
-    #     print("Data processed successfully")
-    # else:
-    #     print("Data invalid")
+    print("--- SCENARIO 3 TEST ---")
+    user_input = "This is some fake user data"
+    if process_user_data(user_input):
+        print("Data processed successfully")
+    else:
+        print("Data invalid")
+
+    
+
     
     print("\n--- END OF TESTS ---")
 
