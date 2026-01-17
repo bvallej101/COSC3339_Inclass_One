@@ -61,6 +61,7 @@ def calculate_shipping_cost(weight, destination):
     cost = max(cost, 0.0)
     return round(cost, 2)
 
+##mdrged bottom half 
 
 
 # This method uses funky logic. Rewrite it using different loop structures
@@ -70,7 +71,7 @@ def curve_scores(scores):
 
 # For scenario three change the name of this method.
 # For scenario five fix the typos
-def _validate_imput(text_value):
+def  not_validate_imput(text_value):
 
     valud_imput = True 
     
