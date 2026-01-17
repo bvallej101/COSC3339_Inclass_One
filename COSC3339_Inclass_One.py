@@ -87,8 +87,8 @@ def curve_scores(scores): ##new function
     return curved_scores
 
 
-def process_user_data(user_input):
-    return _validate_input(user_input)
+def process_user_data(USER_INPUT):
+    return _validate_input(USER_INPUT)
 
 def _validate_input(text_value):
 
