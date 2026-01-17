@@ -92,15 +92,15 @@ def process_user_data(USER_INPUT):
 
 def _validate_input(text_value):
 
-    valud_imput = True 
+    valud_input = True 
     
     if text_value is None:
-        valud_imput = False
+        valud_input = False
     
     if text_value == "":
-        valud_imput = False
+        valud_input = False
         
-    return valud_imput
+    return valud_input
 
 
 def main():
