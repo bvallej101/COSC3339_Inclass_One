@@ -86,6 +86,19 @@ def curve_scores(scores):
 
 # For scenario three change the name of this method.
 # For scenario five fix the typos
+def curve_scores(scores): ##new function
+    MULTIPLIER = 1.05
+    curved_scores = []
+
+    for score in scores:
+        new_score = score * MULTIPLIER
+        if new_score > 100:
+            new_score = 100
+        curved_scores.append(new_score)
+
+    return curved_scores
+
+
 def process_user_data(user_input):
     return _validate_input(user_input)
 
