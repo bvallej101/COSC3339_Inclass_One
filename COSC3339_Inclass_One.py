@@ -71,6 +71,9 @@ def curve_scores(scores):
 
 # For scenario three change the name of this method.
 # For scenario five fix the typos
+def process_user_data(user_input):
+    return _validate_input(user_input)
+
 def _validate_input(text_value):
 
     valud_imput = True 
