@@ -67,19 +67,7 @@ def calculate_shipping_cost(weight, destination):
 
 
 # This method uses funky logic. Rewrite it using different loop structures
-def curve_scores(scores):
-    curved_scores = []
-    i = 0
 
-    while i < len(scores):
-        bump = random.randint(1, 10)
-        new_score = scores[i] + bump
-        if new_score > 100:
-            new_score = 100
-        curved_scores.append(new_score)
-        i += 1
-
-    return curved_scores
 
 
 
